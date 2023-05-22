@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "simple_bar_chart",
+            "name": "unique_simple_bar_chart",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "simple_bar_chart (profile mode)",
+            "name": "unique_simple_bar_chart (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "simple_bar_chart (release mode)",
+            "name": "unique_simple_bar_chart (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

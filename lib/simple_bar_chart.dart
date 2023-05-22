@@ -1,4 +1,5 @@
-library simple_bar_chart;
+library unique_simple_bar_chart;
+
 import 'package:flutter/material.dart';
 import 'data_models.dart';
 import 'horizontal_bar.dart';
@@ -67,4 +68,3 @@ class _SimpleBarChartState extends State<SimpleBarChart> {
     );
   }
 }
-
