@@ -1,22 +1,30 @@
-# unique_simple_bar_chart
+import 'package:flutter/material.dart';
+import 'package:unique_simple_bar_chart/data_models.dart';
+import 'package:unique_simple_bar_chart/simple_bar_chart.dart';
 
-The simple bar chart is indeed a simple design, it helps you to be able to generate a single style simple bar chart for your design, makes it really okay. 
+void main() {
+  runApp(const MyApp());
+}
 
-You can change color or size easily anytime.
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: SimpleBarChatScreen(),
+    );
+  }
+}
 
-To install the package u
+class SimpleBarChatScreen extends StatelessWidget {
+  const SimpleBarChatScreen({super.key});
 
-        unique_simple_bar_chart: ^0.0.1
-
-
-
-
-To create a simple bar chart see this example
-
-
-                  SimpleBarChart(
-            
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: SimpleBarChart(
                 listOfHorizontalBarData: [
                         HorizontalDetailsModel(
                         name: '1',
@@ -81,15 +89,7 @@ To create a simple bar chart see this example
                     ],
                 verticalInterval: 100,
               ),
-
-verticalInterval is the space between the line at the vertical size
-listOfHorizontalBarData is a list of HorizontalDetailsModel, this is use to create the horizontal bars show. 
-
-The output will be like this
-
-
-<img width="440" alt="Screenshot 2023-05-20 at 20 29 55" src="https://github.com/ayanfesolution/simple_bar_chart/assets/84634788/66655266-6aac-4ed8-8a93-5ebc39611329">
-
-
-
-
+      ),
+    );
+  }
+}
