@@ -1,6 +1,6 @@
 name: unique_simple_bar_chart
 description: Developing a simple bar chart package for creating a UI flow of a simple bar charts
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/ayanfesolution/simple_bar_chart.git
 repository: https://github.com/ayanfesolution/simple_bar_chart.git
 
