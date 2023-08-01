@@ -165,7 +165,7 @@ To create a simple bar chart see this example with just Two horizontal bars each
 verticalInterval is the space between the line at the vertical size
 listOfHorizontalBarData is a list of HorizontalDetailsModel, this is used to create the horizontal bars shown. 
 horizontalBarPadding is to adjust the spacing between one bar to another, in case u experience overflow, the default size is 22
-        
+makeItDouble is set to true if the bars are to be two, its default value is false       
 
 
 
