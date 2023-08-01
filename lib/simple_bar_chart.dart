@@ -8,19 +8,21 @@ import 'horizontal_line.dart';
 class SimpleBarChart extends StatefulWidget {
   const SimpleBarChart({
     super.key,
-    this.fullBarChartHeight = 215,
+    this.fullBarChartHeight = 216,
     this.verticalBarTextStyleColor = const Color(0xFF979797),
     this.horizontalLineColor = const Color(0xFFC8C8C8),
     required this.verticalInterval,
     required this.listOfHorizontalBarData,
     this.makeItDouble = false,
+    this.horizontalBarPadding = 22,
   });
   final double fullBarChartHeight;
   final Color verticalBarTextStyleColor;
   final Color horizontalLineColor;
   final bool makeItDouble;
 
-  final double verticalInterval;
+  final double verticalInterval, horizontalBarPadding;
+
   final List<HorizontalDetailsModel> listOfHorizontalBarData;
 
   @override
@@ -64,7 +66,8 @@ class _SimpleBarChartState extends State<SimpleBarChart> {
                   barInterver: widget.verticalInterval,
                   isItDouble: widget.makeItDouble,
                   barColorTwo: widget.listOfHorizontalBarData[i].colorTwo,
-                  barSizeTwo: widget.listOfHorizontalBarData[i].sizeTwo,
+                  barSizeTwo: widget.listOfHorizontalBarData[i].sizeTwo ?? 0,
+                  horizontalBarPadding: widget.horizontalBarPadding,
                 ),
             ],
           ),
