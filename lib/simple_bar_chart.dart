@@ -13,10 +13,12 @@ class SimpleBarChart extends StatefulWidget {
     this.horizontalLineColor = const Color(0xFFC8C8C8),
     required this.verticalInterval,
     required this.listOfHorizontalBarData,
+    this.makeItDouble = false,
   });
   final double fullBarChartHeight;
   final Color verticalBarTextStyleColor;
   final Color horizontalLineColor;
+  final bool makeItDouble;
 
   final double verticalInterval;
   final List<HorizontalDetailsModel> listOfHorizontalBarData;
@@ -60,6 +62,9 @@ class _SimpleBarChartState extends State<SimpleBarChart> {
                   barColor: widget.listOfHorizontalBarData[i].color,
                   barSize: widget.listOfHorizontalBarData[i].size,
                   barInterver: widget.verticalInterval,
+                  isItDouble: widget.makeItDouble,
+                  barColorTwo: widget.listOfHorizontalBarData[i].colorTwo,
+                  barSizeTwo: widget.listOfHorizontalBarData[i].sizeTwo,
                 ),
             ],
           ),
